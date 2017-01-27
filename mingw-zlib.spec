@@ -2,13 +2,13 @@
 
 Name:           mingw-zlib
 Version:        1.2.8
-Release:        5%{?dist}
+Release:        6%{?dist}
 Summary:        MinGW Windows zlib compression library
 
 License:        zlib
 Group:          Development/Libraries
 URL:            http://www.zlib.net/
-Source0:        http://www.zlib.net/zlib-%{version}.tar.gz
+Source0:        https://downloads.sourceforge.net/project/libpng/zlib/%{version}/zlib-%{version}.tar.gz
 # Replace the zlib build system with an autotools based one
 Patch3:         mingw32-zlib-1.2.7-autotools.patch
 # The .def file contains an empty LIBRARY line which isn't valid
@@ -170,6 +170,9 @@ rm -rf $RPM_BUILD_ROOT%{mingw64_mandir}
 
 
 %changelog
+* Sat Jan 28 2017 Jajauma's Packages <jajauma@yandex.ru> - 1.2.8-6
+- Fix d/l URL
+
 * Thu Feb 04 2016 Fedora Release Engineering <releng@fedoraproject.org> - 1.2.8-5
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_24_Mass_Rebuild
 
