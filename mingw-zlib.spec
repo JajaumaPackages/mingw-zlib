@@ -2,7 +2,7 @@
 
 Name:           mingw-zlib
 Version:        1.2.8
-Release:        6%{?dist}
+Release:        7%{?dist}
 Summary:        MinGW Windows zlib compression library
 
 License:        zlib
@@ -170,6 +170,9 @@ rm -rf $RPM_BUILD_ROOT%{mingw64_mandir}
 
 
 %changelog
+* Thu Feb 02 2017 Jajauma's Packages <jajauma@yandex.ru> - 1.2.8-7
+- Rebuild with GCC 5.4.0
+
 * Sat Jan 28 2017 Jajauma's Packages <jajauma@yandex.ru> - 1.2.8-6
 - Fix d/l URL
 
